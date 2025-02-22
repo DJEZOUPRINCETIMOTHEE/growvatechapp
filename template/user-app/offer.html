@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                    <i class="iconsax" data-icon="text-align-left"></i>
+                </a>
+                <h3>Deals Zone</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- offer section starts -->
+    <section class="section-b-space section-lg-t-space">
+        <div class="custom-container">
+            <h5 class="inner-sub-title mb-3">Most valuable offer</h5>
+            <ul class="offer-list">
+                <li class="w-100">
+                    <a href="service-details.html">
+                        <img class="offer-img w-100" src="../../assets/images/banner/banner2.jpg" alt="banner">
+                    </a>
+                </li>
+                <li class="w-100">
+                    <a href="service-details.html">
+                        <img class="offer-img w-100" src="../../assets/images/banner/banner3.jpg" alt="banner">
+                    </a>
+                </li>
+            </ul>
+
+            <h5 class="inner-sub-title mt-4 mb-2">Special offer</h5>
+            <ul class="offer-list">
+                <li class="w-100">
+                    <a href="service-details.html">
+                        <img class="offer-img w-100" src="../../assets/images/banner/banner4.jpg" alt="banner">
+                    </a>
+                </li>
+                <li class="w-100">
+                    <a href="service-details.html">
+                        <img class="offer-img w-100" src="../../assets/images/banner/banner5.jpg" alt="banner">
+                    </a>
+                </li>
+                <li class="w-100">
+                    <a href="service-details.html">
+                        <img class="offer-img w-100" src="../../assets/images/banner/banner6.jpg" alt="banner">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- offer section starts -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- bottom navbar start -->
+    <div class="navbar-menu">
+
+        <ul>
+            <li>
+                <a href="home.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/home.svg" alt="home" />
+                        <img class="active" src="../../assets/images/svg/home-fill.svg" alt="home" />
+                    </div>
+                    <h5>Home</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="booking.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/booking.svg" alt="booking" />
+                        <img class="active" src="../../assets/images/svg/booking-fill.svg" alt="booking" />
+                    </div>
+                    <h5>Booking</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html" class="scanner-btn">
+                    <div class="icon">
+                        <i class="iconsax icon-btn" data-icon="shopping-cart"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="offer.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/offer.svg" alt="offer" />
+                        <img class="active" src="../../assets/images/svg/offer-fill.svg" alt="offer" />
+                    </div>
+                    <h5 class="active">Offer</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/profile.svg" alt="profile" />
+                        <img class="active" src="../../assets/images/svg/profile-fill.svg" alt="profile" />
+                    </div>
+                    <h5>Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- bottom navbar end -->
+
+
+    <!-- sidebar starts -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header sidebar-header">
+            <div class="sidebar-logo">
+                <img class="img-fluid logo" src="../../assets/images/logo/logo.png" alt="logo">
+                <img class="img-fluid logo-dark" src="../../assets/images/logo/logo-white.png" alt="logo">
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="profile-background">
+                <div class="profile-part p-0">
+                    <div class="profile-image">
+                        <img id="output" class="img-fluid profile-pic" src="../../assets/images/profile/p11.png"
+                            alt="11">
+                    </div>
+
+                    <h3>Smitha Williams</h3>
+                    <h4>smithwilliams452@gmail.com</h4>
+                </div>
+            </div>
+
+
+            <ul class="profile-list">
+                <li>
+                    <a href="../user-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="user-2"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>User App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../provider-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/provider-app.svg"
+                                alt="provider-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Provider App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../servicemen-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/servicemen-app.svg"
+                                alt="servicemen-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Servicemen App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="page-listing.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="book-closed"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Template Pages</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../elements/elements-page.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="document-text-1"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5> Template Elements</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="repeat"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>RTL</h5>
+                            <div class="switch-btn">
+                                <input id="dir-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="brush-3"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Dark</h5>
+                            <div class="switch-btn">
+                                <input id="dark-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="bottom-sidebar">
+                <a href="login.html" class="pages">
+                    <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="booking.html">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+                <h3>Accepted Booking Details</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- accepted booking details section starts -->
+    <section class="section-lg-t-space section-b-space">
+        <div class="custom-container">
+            <div class="packages-details-wrapper">
+                <img class="packages-banner w-100 img-fluid" src="../../assets/images/service/4.jpg" alt="5">
+
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <h4 class="theme-color fw-medium">#85963</h4>
+                    <a href="#status" data-bs-toggle="offcanvas" class="status theme-color fw-medium">View status <i
+                            class="iconsax arrow-icon" data-icon="arrow-right"> </i>
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <h4 class="title-color fw-medium">House Hold Cook</h4>
+                    <h6 class="title-color fw-medium d-flex align-items-center gap-1">
+                        <img class="img-fluid" src="../../assets/images/svg/star-fill.svg" alt="star"> 3.8
+                    </h6>
+                </div>
+                <div class="package-booking-details">
+                    <ul class="listing">
+                        <li>
+                            <div class="listing-box">
+                                <i class="iconsax icon" data-icon="calendar-1"> </i>
+                                <div>
+                                    <h6 class="title-color listing-title ps-2">Date</h6>
+                                    <h5 class="content-color white-nowrap mt-1 ps-2">6 Aug,2024</h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listing-box">
+                                <i class="iconsax icon" data-icon="clock"> </i>
+                                <div>
+                                    <h6 class="title-color listing-title ps-2">Time</h6>
+                                    <h5 class="content-color mt-1 ps-2">6:00 PM</h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="listing border-0">
+                        <li>
+                            <div class="listing-box">
+                                <i class="iconsax icon" data-icon="location"> </i>
+                                <div>
+                                    <h6 class="title-color listing-title ps-2">Location</h6>
+                                    <h5 class="content-color ps-2 mt-1"> 21, Trowbridge Cir. Syracuse,
+                                        Connecticut - 35624, USA. </h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="description mt-3">
+                    <h6 class="title-color fw-medium">Description</h6>
+                    <p class="content-color fw-normal mt-1">Our expert technicians will thoroughly clean and disinfect
+                        your air conditioning system, ensuring optimal performance.</p>
+                </div>
+
+                <div class="cancellation-policy">
+                    <div class="policy-box">
+                        <h6 class="fw-normal error-color"> <span class="fw-medium"> Status : </span> The provider has
+                            not
+                            given their approval yet.</h6>
+
+                    </div>
+                </div>
+
+                <div class="packages-details-box mx-0">
+                    <div class="packages-details-head">
+                        <h6 class="title-color fw-normal">Provider Details</h6>
+                    </div>
+
+                    <div class="packages-details">
+                        <div class="packages-profile">
+                            <img class="img-fluid profile-img" src="../../assets/images/profile/p5.png" alt="">
+
+                            <div class="profile-content">
+                                <div>
+                                    <h5 class="fw-medium title-color">Zain Dorwart</h5>
+                                    <h6 class="mt-1 fw-normal content-color">3 years of experience</h6>
+                                </div>
+                                <h6 class="d-flex align-items-center gap-1 title-color">
+                                    <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                                </h6>
+                            </div>
+
+                        </div>
+                        <div class="profile-details">
+                            <a href="#">
+                                <h6><i class="iconsax icon" data-icon="mail"></i> zaindorwart56@gmail.com </h6>
+                            </a>
+                            <a href="#">
+                                <h6><i class="iconsax icon" data-icon="phone"></i> +25 632 256 4562 </h6>
+                            </a>
+                            <a href="#">
+                                <h6 class="pb-0"><i class="iconsax icon" data-icon="location"></i> 38 Ranchview Dr.
+                                    Richard, California, USA. </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages-details-box mb-0 mx-0">
+                    <div class="packages-details-head">
+                        <h6 class="title-color fw-normal">Servicemen Details</h6>
+                    </div>
+
+                    <div class="packages-details">
+                        <div class="packages-profile">
+                            <img class="img-fluid profile-img" src="../../assets/images/profile/p16.png" alt="">
+
+                            <div class="profile-content">
+                                <div>
+                                    <h5 class="fw-medium title-color">Kierra Lubin</h5>
+                                    <h6 class="mt-1 fw-normal content-color">3 years of experience</h6>
+                                </div>
+                                <h6 class="d-flex align-items-center gap-1 title-color">
+                                    <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                                </h6>
+                            </div>
+
+                        </div>
+                        <div class="profile-details servicemen-profile-details p-0 box-background">
+                            <a href="tel:+4733378901">
+                                <h6 class="theme-color w-100 text-center"><i class="iconsax icon" data-icon="phone"></i>
+                                    Call</h6>
+                            </a>
+                            <a href="chatting.html">
+                                <h6 class="theme-color w-100 text-center"><i class="iconsax icon"
+                                        data-icon="messages-2"></i> Chat
+                                </h6>
+                            </a>
+                            <a href="https://www.whatsapp.com/">
+                                <h6 class="theme-color w-100 text-center"><i class="iconsax icon"
+                                        data-icon="whatsapp"></i>
+                                    Whatsapp
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="title mt-3">
+                <h2>Bill Summary</h2>
+            </div>
+            <div class="bill-box">
+                <div class="bill-box-content p-3 pb-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="fw-medium content-color">Per servicemen charge</h5>
+                        <h5 class="fw-medium title-color">$20.00</h5>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between pt-2">
+                        <h5 class="fw-medium content-color">Tax</h5>
+                        <h5 class="fw-medium success-color">$6.00</h5>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2">
+                        <h5 class="fw-medium content-color">Platform fees</h5>
+                        <h5 class="fw-medium success-color">$4.00</h5>
+                    </div>
+                    <div class="total-amount">
+                        <h5 class="fw-medium title-color">Total Amount</h5>
+                        <h4 class="fw-medium theme-color">$30.00</h4>
+                    </div>
+                </div>
+                <img class="img-fluid bottom-design" src="../../assets/images/svg/dots-design.svg" alt="dots-design">
+            </div>
+
+            <div class="title mt-3">
+                <h2>Reviews</h3>
+            </div>
+
+            <ul class="review-list p-0">
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p12.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Devon Lane</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“This is amazing service i have ever get”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p15.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Guy Hawkins</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“I just love their service & the staff nature for work, I’d like to
+                        hire them again”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p16.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Jane Cooper</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“I love their work with ease, Thank you !”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p13.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Lorri Warf</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“The stunning ap to get any service at your home.”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p10.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Iva Ryan</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“This provider has the best staff who assist us until the service is
+                        complete. Thank you!”</p>
+                </li>
+            </ul>
+        </div>
+        <div class="fixed-btn">
+            <div class="custom-container">
+                <a href="booking.html" class="btn theme-btn w-100">Cancel Booking</a>
+            </div>
+        </div>
+    </section>
+    <!-- accepted booking details section end -->
+
+    <!-- view status offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom filter-offcanvas status-offcanvas h-auto" tabindex="-1" id="status">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Booking Status</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="apply-offer-box">
+                <h6>Booking ID</h6>
+                <a href="#">#45896</a>
+            </div>
+
+            <ul class="booking-status-list">
+                <li class="booking-status-box">
+                    <div class="status-dot pending">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="booking-status-details">
+                        <div class="booking-time">
+                            <h6 class="fw-normal content-color">6 Aug</h6>
+                            <h6 class="fw-normal content-color mt-1">9:30 pm</h6>
+                        </div>
+                        <div class="booking-content">
+                            <h6 class="fw-normal title-color">Pending booking request</h6>
+                            <h6 class="fw-normal content-color mt-1 white-nowrap">Booking is added by you.</h6>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="booking-status-box">
+                    <div class="status-dot accepted">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="booking-status-details">
+                        <div class="booking-time">
+                            <h6 class="fw-normal content-color">6 Aug</h6>
+                            <h6 class="fw-normal content-color mt-1">1:10 pm</h6>
+                        </div>
+
+                        <div class="booking-content">
+                            <h6 class="fw-normal title-color">Request Accepted</h6>
+                            <h6 class="fw-normal content-color mt-1 white-nowrap">Booking is accepted by Dlex.</h6>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- view status offcanvas end -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

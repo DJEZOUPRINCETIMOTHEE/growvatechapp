@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header starts -->
+    <header class="auth-header">
+        <div class="custom-container">
+            <div class="header-panel pb-3">
+                <a onclick="history.back();">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+
+                <img class="img-fluid logo" src="../../assets/images/logo/logo.png" alt="logo">
+                <img class="img-fluid logo-dark" src="../../assets/images/logo/logo-white.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- auth section starts -->
+    <section class="section-lg-t-space section-b-space">
+        <div class="custom-container">
+            <div class="auth-title">
+                <h2>LOGIN</h2>
+            </div>
+
+            <form class="auth-form">
+                <div class="form-group mt-0">
+                    <label class="form-label mb-2" for="Inputemail">Email</label>
+                    <div class="form-input">
+                        <input type="email" class="form-control" id="Inputemail" placeholder="Enter your email">
+                        <i class="iconsax" data-icon="mail"></i>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label class="form-label mb-2" for="Inputpassword">Password</label>
+                    <div class="form-input">
+                        <input type="password" class="form-control" id="Inputpassword"
+                            placeholder="Enter your password">
+                        <i class="iconsax" data-icon="lock-2"></i>
+                    </div>
+                    <div class="show-hide toggler">
+                        <i class="iconsax eye-icon icon-eye" data-icon="eye"></i>
+                        <i class="iconsax eye-icon icon-eye-splash" data-icon="eye-slash"></i>
+                    </div>
+                </div>
+                <a class="forgot" href="forgot-password.html">Forgot password?</a>
+
+                <a href="home.html" class="btn theme-btn w-100 auth-btn">Login Now</a>
+
+                <h5 class="content-color fw-medium mt-3 text-center"> Not member ?
+                    <a href="signup.html" class="theme-color fw-semibold">Sign up</a>
+                </h5>
+            </form>
+
+            <div class="division">
+                <span>OR Continue With</span>
+            </div>
+
+            <ul class="login-list">
+                <li class="login-box">
+                    <a href="https://www.google.com/" target="_blank">
+                        <img class="img-fluid login-icon" src="../../assets/images/icon/svg/google.svg" alt="google">
+                    </a>
+                </li>
+                <li class="login-box">
+                    <a href="https://www.apple.com/" target="_blank">
+                        <img class="img-fluid login-icon apple-img" src="../../assets/images/icon/svg/apple.svg"
+                            alt="apple">
+                    </a>
+                </li>
+                <li class="login-box">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="img-fluid login-icon " src="../../assets/images/icon/svg/facebook.svg"
+                            alt="facebook">
+                    </a>
+                </li>
+                <li class="login-box">
+                    <a href="login-number.html">
+                        <img class="img-fluid login-icon" src="../../assets/images/icon/svg/mobile.svg" alt="mobile">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="guest-user theme-color" href="home.html"><i class="iconsax" data-icon="user-2-circle"></i>
+                Continue as
+                a guest</a>
+        </div>
+    </section>
+    <!-- auth section end -->
+
+    <!-- password hide/show js -->
+    <script src="../../assets/js/password-show.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

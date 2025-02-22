@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/swiper-bundle.min.css">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header start -->
+    <header class="header">
+        <div class="custom-container">
+            <div class="head-content">
+                <a href="#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                    <i class="iconsax" data-icon="text-align-left"></i>
+                </a>
+                <a href="location.html" class="header-location">
+                    <div class="location-icon">
+                        <img class="img-fluid location" src="../../assets/images/svg/location.svg" alt="location">
+                    </div>
+                    <div class="location-content">
+                        <div class="d-flex align-items-center gap-1">
+                            <h6>Current Location</h6>
+                            <i class="iconsax d-arrow" data-icon="chevron-down"></i>
+                        </div>
+                        <h5>New Jersey, USA</h5>
+                    </div>
+                </a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="search.html">
+                        <i class="iconsax icon-btn" data-icon="search-normal-2"></i>
+                    </a>
+                    <a href="notification.html">
+                        <i class="iconsax icon-btn notification-icon" data-icon="bell-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner section starts -->
+    <section class="section-lg-t-space">
+        <div class="container-fluid p-0">
+            <div class="position-relative">
+                <img class="img-fluid home-banner w-100 position-relative" src="../../assets/images/banner/banner1.png"
+                    alt="banner">
+                <div class="banner-content position-absolute">
+                    <h6 class="fw-medium text-white error-bg px-2 py-1 rounded-pill d-inline-flex">New Offer</h6>
+                    <h3 class="fw-bold text-uppercase mt-1">50% off in Cleaning</h3>
+                    <h6 class="content-color fw-normal mt-1">#On first 50 booking</h6>
+                    <a href="category-details.html" class="btn theme-btn p-1 px-2 mt-4">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- offer section start -->
+    <section>
+        <div class="custom-container">
+            <div class="title">
+                <h2>Coupons</h2>
+                <a href="coupon.html">View all</a>
+            </div>
+
+            <div class="swiper coupon">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="coupon.html" class="offer-box">
+                            <div class="offer-icon">
+                                <img class="img-fluid offer" src="../../assets/images/svg/coupon-logo.svg" alt="offer">
+                            </div>
+                            <div class="offer-content">
+                                <div>
+                                    <h5 class="fw-medium title-color">Bank of America</h5>
+                                    <h6 class="content-color fw-normal">Use code <span
+                                            class="fw-semibold content-color"> #A125 </span>
+                                    </h6>
+                                </div>
+                                <h3 class="fw-bold theme-color">30% OFF</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="coupon.html" class="offer-box">
+                            <div class="offer-icon">
+                                <img class="img-fluid offer" src="../../assets/images/svg/coupon-logo.svg" alt="offer">
+                            </div>
+                            <div class="offer-content">
+                                <div>
+                                    <h5 class="fw-medium title-color">Bank of America</h5>
+                                    <h6 class="content-color fw-normal">Use code <span
+                                            class="fw-semibold content-color"> #A125 </span>
+                                    </h6>
+                                </div>
+                                <h3 class="fw-bold theme-color">30% OFF</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="coupon.html" class="offer-box">
+                            <div class="offer-icon">
+                                <img class="img-fluid offer" src="../../assets/images/svg/coupon-logo.svg" alt="offer">
+                            </div>
+                            <div class="offer-content">
+                                <div>
+                                    <h5 class="fw-medium title-color">Bank of America</h5>
+                                    <h6 class="content-color fw-normal">Use code <span
+                                            class="fw-semibold content-color">
+                                            #A125 </span>
+                                    </h6>
+                                </div>
+                                <h3 class="fw-bold theme-color">30% OFF</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offer section end -->
+
+    <!-- categories section starts -->
+    <section>
+        <div class="custom-container">
+            <div class="title">
+                <h2>Top categories</h2>
+                <a href="category-grid.html">View all</a>
+            </div>
+            <div class="row g-3">
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/ac-repair.svg"
+                                alt="ac-repair">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Ac Repair</h5>
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/cleaning.svg"
+                                alt="cleaning">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Cleaning</h5>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/carpenter.svg"
+                                alt="carpenter">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Carpenter</h5>
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/cooking.svg" alt="cooking">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Cooking</h5>
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/electrician.svg"
+                                alt="electrician">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Electrician</h5>
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/painter.svg" alt="painter">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Painter</h5>
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/salon.svg" alt="salon">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Salon</h5>
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <a href="category-details.html">
+                        <div class="categories-box">
+                            <img class="categories-icon" src="../../assets/images/categories/plumber.svg" alt="plumber">
+                        </div>
+                        <h5 class="categories-name mt-2 text-center title-color">Plumber</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- categories section end -->
+
+    <!-- service packages section starts -->
+    <section>
+        <div class="custom-container">
+            <div class="title">
+                <h2>Service packages</h2>
+                <a href="packages.html">View all</a>
+            </div>
+
+            <div class="swiper packages">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="packages-box box2">
+                            <a href="packages-details.html">
+                                <div class="packages-icon-box icon-box-2">
+                                    <svg class="packages-icon icon2">
+                                        <use href="../../assets/images/categories/sprite.svg#cleaning"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="packages-name">Cleaning Package</h6>
+                                <h5 class="packages-price">$20.15</h5>
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="more">View More</h6>
+                                    <i class="iconsax arrow" data-icon="arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="packages-box  box4">
+                            <a href="packages-details.html">
+                                <div class="packages-icon-box icon-box-4">
+                                    <svg class="packages-icon icon4">
+                                        <use href="../../assets/images/categories/sprite.svg#carpenter"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="packages-name">Carpenter Package</h6>
+                                <h5 class="packages-price">$20.15</h5>
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="more">View More</h6>
+                                    <i class="iconsax arrow" data-icon="arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="packages-box box3">
+                            <a href="packages-details.html">
+                                <div class="packages-icon-box icon-box-3">
+                                    <svg class="packages-icon icon3">
+                                        <use href="../../assets/images/categories/sprite.svg#cooking"></use>
+                                    </svg>
+                                </div>
+                                <h6 class="packages-name">Cooking Package</h6>
+                                <h5 class="packages-price">$10.32</h5>
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="more">View More</h6>
+                                    <i class="iconsax arrow" data-icon="arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service packages section end -->
+
+    <!-- service section starts -->
+    <section class="section-b-space">
+        <div class="custom-container">
+            <div class="title">
+                <h2>Featured service</h2>
+                <a href="service.html">View all</a>
+            </div>
+
+            <ul class="service-list">
+                <li class="service-box">
+                    <div class="service-head">
+                        <div class="service-profile">
+                            <img class="img-fluid profile-img" src="../../assets/images/profile/p4.png" alt="p4">
+                            <h5>Arlene McCoy</h5>
+                        </div>
+                        <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                alt="star">
+                            3.0</h6>
+                    </div>
+                    <img class="img-fluid w-100" src="../../assets/images/service/1.jpg" alt="">
+                    <div class="service-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="service-details.html">
+                                <h5 class="fw-medium title-color service-name">Cleaning of bathroom</h5>
+                            </a>
+                            <h4 class="fw-semibold title-color d-flex align-items-center gap-1"> $30<span
+                                    class="content-color fw-normal"> <del> $40.50
+                                    </del> </span></h4>
+                        </div>
+
+                        <div class="service-content">
+                            <div class="d-flex align-items-center mt-2">
+                                <h5 class="timing">
+                                    <i class="iconsax" data-icon="clock"></i> 30mins
+                                </h5>
+                                <h6 class="fw-normal title-color ps-2">Min 2 servicemen required</h6>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between gap-1 mt-2">
+                            <p>Foamjet tachnology removes dust 2x deeper.</p>
+                            <a href="cart.html" class="btn-sm theme-btn">+ Add</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service-box">
+                    <div class="service-head">
+                        <div class="service-profile">
+                            <img class="img-fluid profile-img" src="../../assets/images/profile/p5.png" alt="p4">
+                            <h5>Arlene McCoy</h5>
+                        </div>
+                        <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                alt="star">
+                            3.2</h6>
+                    </div>
+                    <img class="img-fluid w-100" src="../../assets/images/service/2.jpg" alt="">
+                    <div class="service-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="service-details.html">
+                                <h5 class="fw-medium title-color">Furnishing & carpentry</h5>
+                            </a>
+                            <h4 class="fw-semibold title-color d-flex align-items-center gap-1"><span
+                                    class="content-color fw-normal"></span> $30</h4>
+                        </div>
+
+                        <div class="service-content">
+                            <div class="d-flex align-items-center mt-2">
+                                <h5 class="timing">
+                                    <i class="iconsax" data-icon="clock"></i> 30mins
+                                </h5>
+                                <h6 class="fw-normal title-color ps-2">Min 2 servicemen required</h6>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between gap-1 mt-2">
+                            <p>Foamjet tachnology removes dust 2x deeper.</p>
+                            <a href="cart.html" class="btn-sm theme-btn">+ Add</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- service section starts -->
+
+    <!-- expert servicer section starts -->
+    <section class="section-b-space box-background">
+        <div class="custom-container">
+            <div class="title">
+                <h2>Expert Servicer</h2>
+                <a href="expert-servicer.html">View all</a>
+            </div>
+
+            <ul class="servicer-list">
+                <li class="servicer-box">
+                    <div class="servicer-profile">
+                        <img class="profile-img" src="../../assets/images/profile/p11.png" alt="p11">
+                    </div>
+                    <div class="servicer-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="servicemen-details.html">
+                                <h4 class="fw-medium title-color">Leslie Alexander</h4>
+                            </a>
+                            <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                    alt="star">
+                                4.2</h6>
+                        </div>
+                        <h6 class="fw-normal title-color">Painting Service</h6>
+
+                        <div class="location">
+                            <i class="iconsax icon" data-icon="location"></i>
+                            <h6> Santa Ana, New York</h6>
+                        </div>
+                    </div>
+                </li>
+                <li class="servicer-box">
+                    <div class="servicer-profile">
+                        <img class="profile-img" src="../../assets/images/profile/p10.png" alt="p11">
+                    </div>
+                    <div class="servicer-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="servicemen-details.html">
+                                <h4 class="fw-medium title-color">Esther Howard</h4>
+                            </a>
+                            <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                    alt="star">
+                                4.0</h6>
+                        </div>
+                        <h6 class="fw-normal title-color">Cleaning, Plumber, Electronics Service</h6>
+
+                        <div class="location">
+                            <i class="iconsax icon" data-icon="location"></i>
+                            <h6> Allentown, New Mexico </h6>
+                        </div>
+                    </div>
+                </li>
+                <li class="servicer-box">
+                    <div class="servicer-profile">
+                        <img class="profile-img" src="../../assets/images/profile/p9.png" alt="p11">
+                    </div>
+                    <div class="servicer-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="servicemen-details.html">
+                                <h4 class="fw-medium title-color">Guy Hawkins</h4>
+                            </a>
+                            <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                    alt="star">
+                                3.8</h6>
+                        </div>
+                        <h6 class="fw-normal title-color">Salon Service</h6>
+
+                        <div class="location">
+                            <i class="iconsax icon" data-icon="location"></i>
+                            <h6> Mesa, New Jersey</h6>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- expert servicer section end -->
+
+    <!-- blog section starts -->
+    <section class="section-b-space">
+        <div class="custom-container">
+            <div class="title">
+                <h2>Latest Blog</h2>
+                <a href="blog.html">View all</a>
+            </div>
+
+            <div class="swiper blog-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-box ratio2_3">
+                            <a href="blog-details.html" class="blog-box-img">
+                                <img class="bg-img blog-img" src="../../assets/images/blog/1.jpg" alt="1">
+                            </a>
+                            <div class="blog-details">
+                                <a href="blog-details.html">
+                                    <h4>Switchboard and wiring electrical issue</h4>
+                                </a>
+                                <h6>Electrician | 5 June, 2024</h6>
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <div class="message">
+                                        <i class="iconsax icon" data-icon="message-dots"></i>
+                                        <h6>23</h6>
+                                    </div>
+
+                                    <h6 class="mt-0 theme-color">- By admin</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-box ratio2_3">
+                            <a href="blog-details.html" class="blog-box-img">
+                                <img class="bg-img blog-img" src="../../assets/images/blog/2.jpg" alt="1">
+                            </a>
+                            <div class="blog-details">
+                                <a href="blog-details.html">
+                                    <h4>Man trimming his beard and hair cutting</h4>
+                                </a>
+                                <h6>Hair cutting | 12 June, 2024</h6>
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <div class="message">
+                                        <i class="iconsax icon" data-icon="message-dots"></i>
+                                        <h6>15</h6>
+                                    </div>
+
+                                    <h6 class="mt-0 theme-color">- By admin</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-box ratio2_3">
+                            <a href="blog-details.html" class="blog-box-img">
+                                <img class="bg-img blog-img" src="../../assets/images/blog/3.jpg" alt="1">
+                            </a>
+                            <div class="blog-details">
+                                <a href="blog-details.html">
+                                    <h4>Bring Joy and Unity on this paint</h4>
+                                </a>
+                                <h6>Painting | 15 June, 2024</h6>
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <div class="message">
+                                        <i class="iconsax icon" data-icon="message-dots"></i>
+                                        <h6>10</h6>
+                                    </div>
+
+                                    <h6 class="mt-0 theme-color">- By admin</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section starts -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- bottom navbar start -->
+    <div class="navbar-menu">
+        <ul>
+            <li class="active">
+                <a href="home.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/home.svg" alt="home">
+                        <img class="active" src="../../assets/images/svg/home-fill.svg" alt="home">
+                    </div>
+                    <h5 class="active">Home</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="booking.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/booking.svg" alt="booking">
+                        <img class="active" src="../../assets/images/svg/booking-fill.svg" alt="booking">
+                    </div>
+                    <h5>Booking</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html" class="scanner-btn">
+                    <div class="icon">
+                        <i class="iconsax icon-btn" data-icon="shopping-cart"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="offer.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/offer.svg" alt="offer">
+                        <img class="active" src="../../assets/images/svg/offer-fill.svg" alt="offer">
+                    </div>
+                    <h5>Offer</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/profile.svg" alt="profile">
+                        <img class="active" src="../../assets/images/svg/profile-fill.svg" alt="profile">
+                    </div>
+                    <h5>Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- bottom navbar end -->
+
+    <!-- sidebar starts -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header sidebar-header">
+            <div class="sidebar-logo">
+                <img class="img-fluid logo" src="../../assets/images/logo/logo.png" alt="logo">
+                <img class="img-fluid logo-dark" src="../../assets/images/logo/logo-white.png" alt="logo">
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="profile-background">
+                <div class="profile-part p-0">
+                    <div class="profile-image">
+                        <img id="output" class="img-fluid profile-pic" src="../../assets/images/profile/p11.png"
+                            alt="11">
+                    </div>
+
+                    <h3>Smitha Williams</h3>
+                    <h4>smithwilliams452@gmail.com</h4>
+                </div>
+            </div>
+
+
+            <ul class="profile-list">
+                <li>
+                    <a href="../user-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="user-2"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>User App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../provider-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/provider-app.svg"
+                                alt="provider-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Provider App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../servicemen-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/servicemen-app.svg"
+                                alt="servicemen-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Servicemen App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="page-listing.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="book-closed"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Template Pages</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../elements/elements-page.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="document-text-1"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5> Template Elements</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="repeat"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>RTL</h5>
+                            <div class="switch-btn">
+                                <input id="dir-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="brush-3"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Dark</h5>
+                            <div class="switch-btn">
+                                <input id="dark-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="bottom-sidebar">
+                <a href="login.html" class="pages">
+                    <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- swiperjs -->
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/custom-swiper.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

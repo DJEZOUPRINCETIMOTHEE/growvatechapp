@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="profile.html">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+                <h3>Wallet Balance</h3>
+                <a href="#add-money" data-bs-toggle="offcanvas">
+                    <i class="iconsax icon-btn" data-icon="add"> </i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- wallet section starts -->
+    <section class="section-lg-t-space">
+        <div class="custom-container">
+            <div class="balance-background">
+                <div class="balance-details">
+                    <div>
+                        <h6>Total Available Balance :</h6>
+                        <h4 class="mt-1">$152.30</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wallet-wrapper">
+            <div class="custom-container">
+                <h4 class="fw-semibold title-color">History</h4>
+                <ul class="wallet-list">
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Painting cancelled #1256</h5>
+                                <h6 class="fw-semibold title-color">$30.50</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                <h5 class="fw-normal content-color">15 Aug, 2024</h5>
+                                <h6 class="fw-medium success-color">Credit</h6>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">House hold cook #4589</h5>
+                                <h6 class="fw-semibold title-color">$30.50</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h6 class="fw-medium content-color"> 22 Aug, 2024</h6>
+                                <h6 class="fw-medium error-color">Debit</h6>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Commercial laundry #5966</h5>
+                                <h6 class="fw-semibold title-color"> $13.00</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">12 Aug, 2024</h5>
+                                <h6 class="fw-medium error-color">Debit</h6>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Display wiring #4534</h5>
+                                <h6 class="fw-semibold title-color"> $14.70</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">11 Aug, 2024</h5>
+                                <h6 class="fw-medium success-color">Credit</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Ac installation #2345</h5>
+                                <h6 class="fw-semibold title-color"> $20.75</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">10 Aug, 2024</h5>
+                                <h6 class="fw-medium success-color">Credit</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Ac cleaning cancelled #4536</h5>
+                                <h6 class="fw-semibold title-color"> $25.90</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">9 Aug, 2024</h5>
+                                <h6 class="fw-medium error-color">Debit</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Salon #4321</h5>
+                                <h6 class="fw-semibold title-color"> $36.45</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">9 Aug, 2024</h5>
+                                <h6 class="fw-medium error-color">Debit</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Painting cancelled #4243</h5>
+                                <h6 class="fw-semibold title-color"> $18.68</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">8 Aug, 2024</h5>
+                                <h6 class="fw-medium error-color">Debit</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wallet-box">
+                        <div class="wallet-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="title-color fw-medium">Cashback #2334</h5>
+                                <h6 class="fw-semibold title-color"> $23.21</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="fw-medium content-color">6 Aug, 2024</h5>
+                                <h6 class="fw-medium success-color">Credit</h6>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- wallet section end -->
+
+    <!-- add money offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom service-booking-offcanvas" tabindex="-1" id="add-money">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasBottomLabel">Add money</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="service-booking-box align-items-start flex-column p-3">
+                <h5 class="text-start title-color">Add from</h5>
+                <select class="form-select w-100 border-0">
+                    <option selected="" disabled>Select payment gateway</option>
+                    <option value="1">Razer pay</option>
+                    <option value="2">Stripe</option>
+                </select>
+
+                <div class="form-group w-100">
+                    <label class="form-label title-color fw-medium without-line mb-2" for="Inputamount">Amount</label>
+                    <div class="form-input">
+                        <input type="number" class="form-control white-background title-color border-0" id="Inputamount"
+                            placeholder="Enter amount">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mt-3">
+                <a href="search.html" class="btn outline-btn w-50">Clear all</a>
+                <a href="search.html" class="btn theme-btn w-50">Apply</a>
+            </div>
+        </div>
+    </div>
+    <!-- add money offcanvas end -->
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

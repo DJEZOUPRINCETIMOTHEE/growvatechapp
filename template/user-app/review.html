@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="service-details.html">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+                <h3>Review</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- rating section starts -->
+    <section class="section-b-space section-lg-t-space">
+        <div class="custom-container">
+            <div class="text-center">
+                <div class="average-rating mb-3">
+                    <ul class="rating">
+                        <li><img class="img-fluid star" src="../../assets/images/svg/theme-star-fill.svg" alt="star">
+                        </li>
+                        <li><img class="img-fluid star" src="../../assets/images/svg/theme-star-fill.svg" alt="star">
+                        </li>
+                        <li><img class="img-fluid star" src="../../assets/images/svg/theme-star-fill.svg" alt="star">
+                        </li>
+                        <li><img class="img-fluid star" src="../../assets/images/svg/theme-star-fill.svg" alt="star">
+                        </li>
+                        <li><img class="img-fluid star" src="../../assets/images/svg/theme-star-outline.svg" alt="star">
+                        </li>
+                    </ul>
+                    <h6 class="fw-normal theme-color">Average rate : <span class="fw-bold"> 4.0 / 5 </span></h6>
+                </div>
+            </div>
+
+            <ul class="review-count">
+                <li>
+                    <h6>5 Star</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <h6 class="text-content">85%</h6>
+                </li>
+                <li>
+                    <h6>4 Star</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="35"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                    <h6 class="text-content">65%</h6>
+                </li>
+                <li>
+                    <h6>3 Star</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="15"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 15%"></div>
+                    </div>
+                    <h6 class="text-content">15%</h6>
+                </li>
+                <li>
+                    <h6>2 Star</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 5%"></div>
+                    </div>
+                    <h6 class="text-content">5%</h6>
+                </li>
+                <li>
+                    <h6>1 Star</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 2%"></div>
+                    </div>
+                    <h6 class="text-content">2%</h6>
+                </li>
+            </ul>
+
+            <div class="title mt-3">
+                <h4 class="fw-medium title-color">Reviews</h4>
+                <select class="form-select">
+                    <option selected>Lowest rate</option>
+                    <option value="1">Highest rate</option>
+                </select>
+            </div>
+
+            <ul class="review-list p-0">
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p12.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Devon Lane</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“This is amazing service i have ever get”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p15.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Guy Hawkins</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“I just love their service & the staff nature for work, I’d like to
+                        hire them again”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p16.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Jane Cooper</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“I love their work with ease, Thank you !”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p13.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Lorri Warf</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“The stunning ap to get any service at your home.”</p>
+                </li>
+                <li class="review-box">
+                    <div class="review-profile">
+                        <img class="img-fluid profile-img" src="../../assets/images/profile/p10.png" alt="">
+
+                        <div class="profile-content">
+                            <div>
+                                <h5 class="fw-medium title-color">Iva Ryan</h5>
+                                <h6 class="content-color mt-1">12 min ago</h6>
+                            </div>
+                            <h6 class="d-flex align-items-center">
+                                <img src="../../assets/images/svg/star-fill.svg" alt="star"> 3.0
+                            </h6>
+                        </div>
+                    </div>
+
+                    <p class="review-content">“This provider has the best staff who assist us until the service is
+                        complete. Thank you!”</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- rating section end -->
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

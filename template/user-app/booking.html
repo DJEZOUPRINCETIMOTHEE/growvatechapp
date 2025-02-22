@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- calendar css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/calendar.min.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                    <i class="iconsax" data-icon="text-align-left"></i>
+                </a>
+                <h3>Bookings</h3>
+                <a href="notification.html">
+                    <i class="iconsax icon-btn notification-icon" data-icon="bell-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- booking section starts -->
+    <section class="section-b-space section-lg-t-space">
+        <div class="custom-container">
+            <form class="auth-form mt-0 p-0 bg-transparent">
+                <div class="form-group mt-0">
+                    <div class="form-input">
+                        <input type="search" class="form-control search with-filter" id="inputusername"
+                            placeholder="Search destinations">
+                        <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                        <a href="#filter" data-bs-toggle="offcanvas">
+                            <i class="iconsax filter-icon" data-icon="setting-3"> </i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <h3 class="mt-3 inner-sub-title">All Booking</h3>
+            <ul class="booking-list">
+                <li class="booking-box">
+                    <div class="booking-details">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="service-content">
+                                <a href="packages-booking-details.html" class="d-flex align-items-center gap-2 mb-1">
+                                    <h5 class="theme-color fw-medium">#58961</h5>
+                                    <h6 class="booking-tag success-bg">Package</h6>
+                                </a>
+                                <a href="pending-booking-details.html">
+                                    <h4 class="title-color fw-medium">Curtain Cleaning</h4>
+                                </a>
+                                <div class="d-flex align-items-center gap-2 mt-1">
+                                    <h3 class="title-color fw-bold ">$22.00</h3>
+                                    <h6 class="error-color fw-medium">(10% off)</h6>
+                                </div>
+                            </div>
+                            <div class="service-img">
+                                <img class="img-fluid img" src="../../assets/images/vertical-service/3.jpg" alt="1">
+                            </div>
+                        </div>
+                        <div class="line-box">
+                            <div class="dot1"></div>
+                            <div class="dot2"></div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <h6 class="fw-medium content-color">Status</h6>
+                            <h6 class="booking-tag pending-bg">Pending</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Selected servicemen</h6>
+                            <h6 class="fw-medium title-color">1 servicemen</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Date & Time</h6>
+                            <h6 class="fw-medium title-color">6 Aug, 2024 - 5:20 pm</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Location</h6>
+                            <h6 class="fw-medium title-color">California - USA</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Payment</h6>
+                            <h6 class="fw-medium success-color">Paid in Advance</h6>
+                        </div>
+
+                        <ul class="booking-provider-list">
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p17.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Provider</h6>
+                                        <h5 class="name fw-medium title-color">Stella Milevski</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        3.6</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="booking-box">
+                    <div class="booking-details">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="service-content">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <h5 class="theme-color fw-medium">#58962</h5>
+                                </div>
+                                <a href="accepted-booking-details.html">
+                                    <h4 class="title-color fw-medium">House Hold Cook</h4>
+                                </a>
+                                <div class="d-flex align-items-center gap-2 mt-1">
+                                    <h3 class="title-color fw-bold ">$20.00</h3>
+                                    <h6 class="error-color fw-medium">(10% off)</h6>
+                                </div>
+                            </div>
+                            <div class="service-img">
+                                <img class="img-fluid img" src="../../assets/images/vertical-service/4.jpg" alt="1">
+                            </div>
+                        </div>
+                        <div class="line-box">
+                            <div class="dot1"></div>
+                            <div class="dot2"></div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <h6 class="fw-medium content-color">Status</h6>
+                            <h6 class="booking-tag accepted-bg">Accepted</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Selected servicemen</h6>
+                            <h6 class="fw-medium title-color">1 servicemen</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Date & Time</h6>
+                            <h6 class="fw-medium title-color">7 Aug, 2024 - 11:00 am</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Payment</h6>
+                            <h6 class="fw-medium success-color">Not paid yet</h6>
+                        </div>
+
+                        <ul class="booking-provider-list">
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p13.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Provider</h6>
+                                        <h5 class="name fw-medium title-color">Kate Tanner</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.0</h6>
+                                </div>
+                            </li>
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p2.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Servicemen</h6>
+                                        <h5 class="name fw-medium title-color">Kierra Lubin</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.6</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="booking-box">
+                    <div class="booking-details">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="service-content">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <h5 class="theme-color fw-medium">#58964</h5>
+                                </div>
+                                <a href="onging-booking-details.html">
+                                    <h4 class="title-color fw-medium">Hair Cutting & Spa</h4>
+                                </a>
+                                <div class="d-flex align-items-center gap-2 mt-1">
+                                    <h3 class="title-color fw-bold ">$30.00</h3>
+                                    <h6 class="error-color fw-medium">(10% off)</h6>
+                                </div>
+                            </div>
+                            <div class="service-img">
+                                <img class="img-fluid img" src="../../assets/images/vertical-service/6.jpg" alt="1">
+                            </div>
+                        </div>
+                        <div class="line-box">
+                            <div class="dot1"></div>
+                            <div class="dot2"></div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <h6 class="fw-medium content-color">Status</h6>
+                            <h6 class="booking-tag ongoing-bg">Ongoing</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Selected servicemen</h6>
+                            <h6 class="fw-medium title-color">1 servicemen</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Date & Time</h6>
+                            <h6 class="fw-medium title-color">7 Aug, 2024 - 2:00 pm</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Payment</h6>
+                            <h6 class="fw-medium success-color">Not paid yet</h6>
+                        </div>
+
+                        <ul class="booking-provider-list">
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p7.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Provider</h6>
+                                        <h5 class="name fw-medium title-color">Jane Cooper</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.0</h6>
+                                </div>
+                            </li>
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p9.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Servicemen</h6>
+                                        <h5 class="name fw-medium title-color">Willie Tanner</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.6</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="booking-box">
+                    <div class="booking-details">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="service-content">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <h5 class="theme-color fw-medium">#58966</h5>
+                                </div>
+                                <a href="completed-booking-details.html">
+                                    <h4 class="title-color fw-medium">Furnishing & Carpentry</h4>
+                                </a>
+                                <div class="d-flex align-items-center gap-2 mt-1">
+                                    <h3 class="title-color fw-bold ">$50.20</h3>
+                                </div>
+                            </div>
+                            <div class="service-img">
+                                <img class="img-fluid img" src="../../assets/images/vertical-service/2.jpg" alt="1">
+                            </div>
+                        </div>
+                        <div class="line-box">
+                            <div class="dot1"></div>
+                            <div class="dot2"></div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <h6 class="fw-medium content-color">Status</h6>
+                            <h6 class="booking-tag theme-bg">Completed</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Selected servicemen</h6>
+                            <h6 class="fw-medium title-color">2 servicemen</h6>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Date & Time</h6>
+                            <h6 class="fw-medium title-color">7 Aug, 2024 - 9:00 am</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Payment</h6>
+                            <h6 class="fw-medium success-color">Not paid yet</h6>
+                        </div>
+
+                        <ul class="booking-provider-list">
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p5.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Provider</h6>
+                                        <h5 class="name fw-medium title-color">Zain Dorwart</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.0</h6>
+                                </div>
+                            </li>
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p8.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Servicemen</h6>
+                                        <h5 class="name fw-medium title-color">Brandon Dorwart</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.5</h6>
+                                </div>
+                            </li>
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p4.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Servicemen</h6>
+                                        <h5 class="name fw-medium title-color">Rhiel Madsen</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.2</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="booking-box">
+                    <div class="booking-details">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="service-content">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <h5 class="theme-color fw-medium">#58968</h5>
+                                </div>
+                                <a href="cancelled-booking-details.html">
+                                    <h4 class="title-color fw-medium">Chimney Sweeping</h4>
+                                </a>
+                                <div class="d-flex align-items-center gap-2 mt-1">
+                                    <h3 class="title-color fw-bold ">$15.50</h3>
+                                </div>
+                            </div>
+                            <div class="service-img">
+                                <img class="img-fluid img" src="../../assets/images/vertical-service/8.jpg" alt="1">
+                            </div>
+                        </div>
+                        <div class="line-box">
+                            <div class="dot1"></div>
+                            <div class="dot2"></div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <h6 class="fw-medium content-color">Status</h6>
+                            <h6 class="booking-tag error-bg">Cancelled</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <h6 class="fw-medium content-color">Date & Time</h6>
+                            <h6 class="fw-medium title-color">8 Aug, 2024 - 10:00 am</h6>
+                        </div>
+
+                        <ul class="booking-provider-list">
+                            <li class="booking-provider-box">
+                                <div class="provider-image">
+                                    <img class="img-fluid provider-pic" src="../../assets/images/profile/p10.png"
+                                        alt="p17">
+                                </div>
+                                <div class="provider-content">
+                                    <div>
+                                        <h6 class="content-color fw-medium">Provider</h6>
+                                        <h5 class="name fw-medium title-color">Lynn Tanner</h5>
+                                    </div>
+                                    <h6 class="fw-normal title-color d-flex align-items-center gap-1"><img
+                                            src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        4.0</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- booking section end -->
+
+    <!-- filter offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom filter-offcanvas" tabindex="-1" id="filter">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter by (4)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="custom-container">
+            <ul class="nav nav-pills tab-style1 mt-3 mb-2" id="Default-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="status-tab" data-bs-toggle="pill" data-bs-target="#status"
+                        type="button" role="tab">Status</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="date-tab" data-bs-toggle="pill" data-bs-target="#date" type="button"
+                        role="tab">Date</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
+                        role="tab">Category</button>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-body pt-2">
+            <div class="tab-content" id="myTabContent1">
+                <div class=" tab-pane fade show active" id="status" role="tabpanel" tabindex="0">
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking1">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">All Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking1" checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking2">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Pending Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking2">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking3">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Accepted Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking3">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking4">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Ongoing Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking4">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking5">
+                                    <span class="d-flex align-items-center">
+
+                                        <span class="categories-name ps-0 border-0">Complete Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking5">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking6">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Cancelled Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking6">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="date" role="tabpanel" tabindex="0">
+                    <div class="demo-range-select w-100">
+                        <div id="demo-range-selection"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="home" role="tabpanel" tabindex="0">
+                    <h5 class="content-color fw-normal">Category list</h5>
+
+                    <form class="auth-form mt-0 p-0 bg-transparent">
+                        <div class="form-group">
+                            <div class="form-input">
+                                <input type="search" class="form-control search wo-filter" placeholder="Search here..">
+                                <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories1">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/ac-repair.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Ac Repair</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories1"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories2">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/cleaning.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Cleaning</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories2"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories4">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/carpenter.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Carpenter</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories4"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories5">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/cooking.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Cooking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories5">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories6">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon"
+                                            src="../../assets/images/categories/electrician.svg" alt="ac-repair">
+                                        <span class="categories-name">Electrician</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories6">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories7">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/painter.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Painter</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories7">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories8">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/plumber.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Plumber</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories8">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-btn fixed-button position-relative">
+            <div class="custom-container">
+                <div class="d-flex align-items-center gap-3">
+                    <a href="booking.html" class="btn outline-btn w-50">Clear all</a>
+                    <a href="booking.html" class="btn theme-btn w-50">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- filter offcanvas end -->
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- bottom navbar start -->
+    <div class="navbar-menu">
+
+        <ul>
+            <li>
+                <a href="home.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/home.svg" alt="home">
+                        <img class="active" src="../../assets/images/svg/home-fill.svg" alt="home">
+                    </div>
+                    <h5>Home</h5>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="booking.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/booking.svg" alt="booking">
+                        <img class="active" src="../../assets/images/svg/booking-fill.svg" alt="booking">
+                    </div>
+                    <h5 class="active">Booking</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html" class="scanner-btn">
+                    <div class="icon">
+                        <i class="iconsax icon-btn" data-icon="shopping-cart"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="offer.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/offer.svg" alt="offer">
+                        <img class="active" src="../../assets/images/svg/offer-fill.svg" alt="offer">
+                    </div>
+                    <h5>Offer</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/profile.svg" alt="profile">
+                        <img class="active" src="../../assets/images/svg/profile-fill.svg" alt="profile">
+                    </div>
+                    <h5>Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- bottom navbar end -->
+
+
+    <!-- sidebar starts -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header sidebar-header">
+            <div class="sidebar-logo">
+                <img class="img-fluid logo" src="../../assets/images/logo/logo.png" alt="logo">
+                <img class="img-fluid logo-dark" src="../../assets/images/logo/logo-white.png" alt="logo">
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="profile-background">
+                <div class="profile-part p-0">
+                    <div class="profile-image">
+                        <img id="output" class="img-fluid profile-pic" src="../../assets/images/profile/p11.png"
+                            alt="11">
+                    </div>
+
+                    <h3>Smitha Williams</h3>
+                    <h4>smithwilliams452@gmail.com</h4>
+                </div>
+            </div>
+
+
+            <ul class="profile-list">
+                <li>
+                    <a href="../user-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="user-2"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>User App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../provider-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/provider-app.svg"
+                                alt="provider-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Provider App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../servicemen-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/servicemen-app.svg"
+                                alt="servicemen-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Servicemen App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="page-listing.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="book-closed"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Template Pages</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../elements/elements-page.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="document-text-1"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5> Template Elements</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="repeat"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>RTL</h5>
+                            <div class="switch-btn">
+                                <input id="dir-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="brush-3"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Dark</h5>
+                            <div class="switch-btn">
+                                <input id="dark-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="bottom-sidebar">
+                <a href="login.html" class="pages">
+                    <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- calendar js -->
+    <script src="../../assets/js/calendar.min.js"></script>
+    <script src="../../assets/js/custom-calendar.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

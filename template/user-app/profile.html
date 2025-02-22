@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                    <i class="iconsax" data-icon="text-align-left"></i>
+                </a>
+                <h3>Profile</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- profile section starts -->
+    <section class="section-b-space section-lg-t-space">
+        <div class="custom-container">
+            <div class="profile-background">
+                <img class="img-fluid profile-bg" src="../../assets/images/background/profile-bg.png" alt="profile-bg">
+                <div class="profile-part mt-3">
+                    <div class="profile-image">
+                        <img id="output" class="img-fluid profile-pic" src="../../assets/images/profile/p11.png"
+                            alt="11">
+                        <i class="iconsax edit-icon" data-icon="edit-2"></i>
+                        <input id="file" type="file" onchange="loadFile(event)">
+                    </div>
+
+                    <h3>Smitha Williams</h3>
+                    <h4>smithwilliams452@gmail.com</h4>
+                </div>
+                <div class="balance-background mt-3">
+                    <a href="wallet.html" class="balance-details">
+                        <h5 class="fw-medium">Available Balance :</h5>
+                        <div class="d-flex align-items-center gap-1">
+                            <h4>$152.30</h4>
+                            <i class=" iconsax arrow-icon" data-icon="arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="profile-list">
+                <h5 class="inner-sub-title theme-color text-capitalize mb-2">General</h5>
+                <ul class="setting-listing">
+                    <li class="w-100">
+                        <a href="profile-setting.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="user-2"> </i>
+                            </div>
+
+                            <div class="setting-content">
+                                <h5>Profile Setting</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="favorite-list.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="heart"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Favourite List</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="my-location.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="location"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Manage Locations</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="my-review.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="receipt-discount-2"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>My Review</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="profile-list">
+                <h5 class="inner-sub-title theme-color text-capitalize mb-2">App details</h5>
+                <ul class="setting-listing">
+                    <li class="w-100">
+                        <a href="app-setting.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="password-check"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>App Setting </h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="#share" class="setting-box" data-bs-toggle="modal">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="send-2"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Share App</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="help.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="24hr-service"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Help & Support</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="contact-us.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="phone"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Contact Us</h5>
+                                <i class="iconsax icon" data-icon="chevron-right"> </i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="../provider-app/index.html" class="provider-banner-part">
+                <div class="provider-img">
+                    <img class="img-fluid provider-icon" src="../../assets/images/svg/provider-vector-img.svg" alt="">
+                </div>
+                <div class="provider-content">
+                    <h4 class="theme-color fw-medium">Become a provider</h4>
+                    <i class="iconsax icon" data-icon="chevron-right"> </i>
+                </div>
+            </a>
+
+            <div class="profile-list">
+                <h5 class="inner-sub-title error-color text-capitalize mb-2">Alert zone</h5>
+                <ul class="setting-listing alert-list">
+                    <li class="w-100">
+                        <a href="#delete" class="setting-box" data-bs-toggle="modal">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="user-2-remove"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5 class="error-color">Delete Account</h5>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="w-100">
+                        <a href="#logout" class="setting-box" data-bs-toggle="modal">
+                            <div class="setting-icon">
+                                <i class="iconsax icon" data-icon="logout-2"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5 class="error-color">Logout</h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- profile section end -->
+
+    <!-- add modal starts -->
+    <div class="modal fade centered-modal" id="share" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Share App</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body pb-3">
+                    <ul class="media-list">
+                        <li>
+                            <a href="#" class="media-box">
+                                <div class="media-image mx-auto">
+                                    <img class="img-fluid icon" src="../../assets/images/icon/svg/whatsapp.svg"
+                                        alt="whatsapp">
+                                </div>
+                                <h5>Whatsapp</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="media-box">
+                                <div class="media-image mx-auto">
+                                    <img class="img-fluid icon" src="../../assets/images/icon/svg/facebook.svg"
+                                        alt="facebook">
+                                </div>
+                                <h5>Facebook</h5>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://slack.com/signin#/signin" class="media-box">
+                                <div class="media-image mx-auto">
+                                    <img class="img-fluid icon" src="../../assets/images/icon/svg/instagram.svg"
+                                        alt="instagram">
+                                </div>
+                                <h5>Instagram</h5>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/accounts/login/" class="media-box">
+                                <div class="media-image mx-auto">
+                                    <img class="img-fluid icon" src="../../assets/images/icon/svg/twitter.svg"
+                                        alt="twitter">
+                                </div>
+                                <h5>Twitter</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/accounts/login/" class="media-box">
+                                <div class="media-image mx-auto">
+                                    <img class="img-fluid icon" src="../../assets/images/icon/svg/gmail.svg"
+                                        alt="gmail">
+                                </div>
+                                <h5>Email</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://telegr.am/user_mgt/login" class="media-box">
+                                <div class="media-image mx-auto">
+                                    <img class="img-fluid icon" src="../../assets/images/icon/svg/telegram.svg"
+                                        alt="telegram">
+                                </div>
+                                <h5>Telegram</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add modal end -->
+
+    <!-- delete account modal starts -->
+    <div class="modal centered-modal fade" id="delete" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Delete Account</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="successful-icon p-4 text-center">
+                        <img class="img-fluid icon" src="../../assets/images/delete.svg" alt="delete-account">
+                    </div>
+                    <p>Your account will be permanently erased if you choose to delete it. There is no way to get your
+                        info back.</p>
+                </div>
+                <div class="modal-footer grid-btn">
+                    <a href="#" data-bs-dismiss="modal" class="btn outline-btn w-50">Cancel</a>
+                    <a href="login.html" class="btn theme-btn w-50">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delete account modal end -->
+
+    <!-- logout modal starts -->
+    <div class="modal centered-modal fade" id="logout" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Delete Account</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="successful-icon p-4 text-center">
+                        <img class="img-fluid icon" src="../../assets/images/failed-booking.svg" alt="delete-account">
+                    </div>
+                    <p>Are you sure you want to logout from this application , now ?</p>
+                </div>
+                <div class="modal-footer grid-btn">
+                    <a href="profile.html" class="btn outline-btn w-50">Cancel</a>
+                    <a href="login.html" class="btn theme-btn w-50">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delete account modal end -->
+
+    <!-- bottom navbar start -->
+    <div class="navbar-menu">
+
+
+        <ul>
+            <li>
+                <a href="home.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/home.svg" alt="home" />
+                        <img class="active" src="../../assets/images/svg/home-fill.svg" alt="home" />
+                    </div>
+                    <h5>Home</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="booking.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/booking.svg" alt="booking" />
+                        <img class="active" src="../../assets/images/svg/booking-fill.svg" alt="booking" />
+                    </div>
+                    <h5>Booking</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html" class="scanner-btn">
+                    <div class="icon">
+                        <i class="iconsax icon-btn" data-icon="shopping-cart"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="offer.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/offer.svg" alt="offer" />
+                        <img class="active" src="../../assets/images/svg/offer-fill.svg" alt="offer" />
+                    </div>
+                    <h5>Offer</h5>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="profile.html">
+                    <div class="icon">
+                        <img class="unactive" src="../../assets/images/svg/profile.svg" alt="profile" />
+                        <img class="active" src="../../assets/images/svg/profile-fill.svg" alt="profile" />
+                    </div>
+                    <h5 class="active">Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- bottom navbar end -->
+
+    <!-- sidebar starts -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header sidebar-header">
+            <div class="sidebar-logo">
+                <img class="img-fluid logo" src="../../assets/images/logo/logo.png" alt="logo">
+                <img class="img-fluid logo-dark" src="../../assets/images/logo/logo-white.png" alt="logo">
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="profile-background">
+                <div class="profile-part p-0">
+                    <div class="profile-image">
+                        <img id="output" class="img-fluid profile-pic" src="../../assets/images/profile/p11.png"
+                            alt="11">
+                    </div>
+
+                    <h3>Smitha Williams</h3>
+                    <h4>smithwilliams452@gmail.com</h4>
+                </div>
+            </div>
+
+
+            <ul class="profile-list">
+                <li>
+                    <a href="../user-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="user-2"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>User App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../provider-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/provider-app.svg"
+                                alt="provider-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Provider App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../servicemen-app/index.html" class="setting-box">
+                        <div class="setting-icon">
+                            <img class="img-fluid main-icon main-img" src="../../assets/images/svg/servicemen-app.svg"
+                                alt="servicemen-app">
+                        </div>
+                        <div class="setting-content">
+                            <h5>Servicemen App</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="page-listing.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="book-closed"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Template Pages</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../elements/elements-page.html" class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="document-text-1"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5> Template Elements</h5>
+                            <i class="iconsax arrow" data-icon="chevron-right"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="repeat"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>RTL</h5>
+                            <div class="switch-btn">
+                                <input id="dir-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="setting-box">
+                        <div class="setting-icon">
+                            <i class="iconsax main-icon" data-icon="brush-3"> </i>
+                        </div>
+                        <div class="setting-content">
+                            <h5>Dark</h5>
+                            <div class="switch-btn">
+                                <input id="dark-switch" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="bottom-sidebar">
+                <a href="login.html" class="pages">
+                    <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- image change js -->
+    <script src="../../assets/js/image-change.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

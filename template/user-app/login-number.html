@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+    <!-- header starts -->
+    <header class="auth-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="login.html">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- auth section starts -->
+    <section class="section-lg-t-space section-b-space">
+        <div class="custom-container">
+            <div class="auth-img mt-2">
+                <img class="img-fluid" src="../../assets/images/authantication/1.svg" alt="">
+            </div>
+            <div class="auth-title text-center pt-0 mt-5">
+                <h2 class="title-color">LOGIN WITH PHONE</h2>
+                <h5 class="mt-1 content-color">Enter your register phone number</h5>
+            </div>
+
+            <form class="auth-form">
+                <div class="form-group mt-0">
+                    <label class="form-label" for="validationDefault01">Mobile Number</label>
+                    <div class="d-flex gap-2">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle mt-0" href="#" role="button" data-bs-toggle="dropdown">
+                                +1-212
+                                <i class="iconsax dropdown-icon" data-icon="chevron-down"> </i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">+1-212</a></li>
+                                <li><a href="#" class="dropdown-item">+1-213</a></li>
+                                <li><a href="#" class="dropdown-item">+1-702</a></li>
+                                <li><a href="#" class="dropdown-item">+1-312</a></li>
+                                <li><a href="#" class="dropdown-item">+1-617</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-input w-100">
+                            <input type="number" class="form-control without-icon" id="validationDefault01"
+                                placeholder="Enter your number" required>
+                        </div>
+                    </div>
+                </div>
+                <a href="home.html" class="btn theme-btn w-100 auth-btn">Login</a>
+            </form>
+        </div>
+    </section>
+    <!-- auth section end -->
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

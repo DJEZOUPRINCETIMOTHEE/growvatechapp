@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="home.html">
+                        <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                    </a>
+                    <h3>Search</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- search section starts -->
+    <section class="section-lg-t-space section-b-space">
+        <div class="custom-container">
+            <form class="auth-form mt-0 p-0 bg-transparent">
+                <div class="form-group">
+                    <div class="form-input">
+                        <input type="search" class="form-control search with-filter" id="inputusername"
+                            placeholder="Search destinations">
+                        <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                        <a href="#filter" data-bs-toggle="offcanvas">
+                            <i class="iconsax filter-icon" data-icon="setting-3"> </i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <h5 class="inner-sub-title mt-3">Recent search</h5>
+            <ul class="service-list mt-3">
+                <li class="service-box">
+                    <div class="service-head">
+                        <div class="service-profile">
+                            <img class="img-fluid profile-img" src="../../assets/images/profile/p4.png" alt="p4">
+                            <h5>Arlene McCoy</h5>
+                        </div>
+                        <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                alt="star">
+                            3.0</h6>
+                    </div>
+                    <img class="img-fluid w-100" src="../../assets/images/service/1.jpg" alt="">
+                    <div class="service-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="service-details.html">
+                                <h5 class="fw-medium title-color service-name">Cleaning of bathroom</h5>
+                            </a>
+                            <h4 class="fw-semibold title-color d-flex align-items-center gap-1"> $30<span
+                                    class="content-color fw-normal"> <del> $40.50
+                                    </del> </span></h4>
+                        </div>
+
+                        <div class="service-content">
+                            <div class="d-flex align-items-center mt-2">
+                                <h5 class="timing">
+                                    <i class="iconsax" data-icon="clock"></i> 30mins
+                                </h5>
+                                <h6 class="fw-normal title-color ps-2">Min 2 servicemen required</h6>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between gap-1 mt-2">
+                            <p>Foamjet tachnology removes dust 2x deeper.</p>
+                            <a href="cart.html" class="btn-sm theme-btn">+ Add</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service-box">
+                    <div class="service-head">
+                        <div class="service-profile">
+                            <img class="img-fluid profile-img" src="../../assets/images/profile/p5.png" alt="p4">
+                            <h5>Arlene McCoy</h5>
+                        </div>
+                        <h6 class="rating"> <img class="img-fluid star" src="../../assets/images/svg/star-fill.svg"
+                                alt="star">
+                            3.2</h6>
+                    </div>
+                    <img class="img-fluid w-100" src="../../assets/images/service/2.jpg" alt="">
+                    <div class="service-details">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="service-details.html">
+                                <h5 class="fw-medium title-color">Furnishing & carpentry</h5>
+                            </a>
+                            <h4 class="fw-semibold title-color d-flex align-items-center gap-1"><span
+                                    class="content-color fw-normal"></span> $30</h4>
+                        </div>
+
+                        <div class="service-content">
+                            <div class="d-flex align-items-center mt-2">
+                                <h5 class="timing">
+                                    <i class="iconsax" data-icon="clock"></i> 30mins
+                                </h5>
+                                <h6 class="fw-normal title-color ps-2">Min 2 servicemen required</h6>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between gap-1 mt-2">
+                            <p>Foamjet tachnology removes dust 2x deeper.</p>
+                            <a href="cart.html" class="btn-sm theme-btn">+ Add</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- search section starts -->
+
+    <!-- filter offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom filter-offcanvas" tabindex="-1" id="filter">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter by (4)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="custom-container">
+            <ul class="nav nav-pills tab-style1 mt-3 mb-2" id="Default-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home"
+                        type="button" role="tab">Category</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="pill" data-bs-target="#profile"
+                        type="button" role="tab">Price & rate</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="distance-tab" data-bs-toggle="pill" data-bs-target="#distance"
+                        type="button" role="tab">Distance</button>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-body pt-2">
+            <div class="tab-content" id="myTabContent1">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" tabindex="0">
+                    <h5 class="content-color fw-normal">Category list</h5>
+
+                    <form class="auth-form mt-0 p-0 bg-transparent">
+                        <div class="form-group">
+                            <div class="form-input">
+                                <input type="search" class="form-control search wo-filter" placeholder="Search here..">
+                                <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories1">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/ac-repair.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Ac Repair</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories1"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories2">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/cleaning.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Cleaning</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories2"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories4">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/carpenter.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Carpenter</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories4"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories5">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/cooking.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Cooking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories5">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories6">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon"
+                                            src="../../assets/images/categories/electrician.svg" alt="ac-repair">
+                                        <span class="categories-name">Electrician</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories6">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories7">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/painter.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Painter</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories7">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories8">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/plumber.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Plumber</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories8">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="price-range">
+                        <label class="form-label title-color text-start">Price Range</label>
+                        <div class="range-slider">
+                            <div class="range-container">
+                                <div class="sliders-control">
+                                    <input id="fromSlider" type="range" value="100" min="0" max="1000">
+                                    <input id="toSlider" type="range" value="750" min="0" max="1000">
+                                </div>
+                                <div class="form_control">
+                                    <div class="form-control-container">
+                                        <span class="theme-color">$</span>
+                                        <input class="form-control-container-time-input" type="number" id="fromInput"
+                                            value="100" min="0" max="1000">
+                                    </div>
+                                    <div class="form-control-container">
+                                        <span class="theme-color">$</span>
+                                        <input class="form-control-container-time-input" type="number" id="toInput"
+                                            value="750" min="0" max="1000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="content-color fw-normal mt-3">Ratings</h5>
+
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="rating5">
+                                    <span class="rating-count">5 rate</span>
+                                    <span class="d-flex align-items-center ps-2">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="rating" id="rating5" checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="rating4">
+                                    <span class="rating-count">4 rate</span>
+                                    <span class="d-flex align-items-center ps-2">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="rating" id="rating4" checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="rating3">
+                                    <span class="rating-count">3 rate</span>
+                                    <span class="d-flex align-items-center ps-2">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="rating" id="rating3">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="rating2">
+                                    <span class="rating-count">2 rate</span>
+                                    <span class="d-flex align-items-center ps-2">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="rating" id="rating2">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="rating1">
+                                    <span class="rating-count">1 rate</span>
+                                    <span class="d-flex align-items-center ps-2">
+                                        <img class="star" src="../../assets/images/svg/star-fill.svg" alt="star">
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="rating" id="rating1">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="distance" role="tabpanel" tabindex="0">
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="location1">
+                                    <span class="d-flex align-items-center">
+                                        <i class="iconsax icon pe-2 d-flex align-items-center justify-content-center"
+                                            data-icon="route-1"> </i>
+                                        <span class="categories-name">Near by Location</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="location" id="location1">
+                            </div>
+                        </li>
+                        <li class="listing-categories pb-4 flex-column">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="location2">
+                                    <span class="d-flex align-items-center">
+                                        <i class="iconsax icon pe-2 d-flex align-items-center justify-content-center"
+                                            data-icon="globe"> </i>
+                                        <span class="categories-name">Distance location</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="location" id="location2" checked>
+                            </div>
+
+                            <div class="rating-wrapper">
+                                <div class="progress-bar-wrap" id="progress-bar-wrap"
+                                    onclick="progressBarClickHandler(event)" onmousedown="sliderOnChangeHandler()">
+                                    <span class="progress-bar" id="progress-bar"></span>
+                                    <div>
+                                        <div class="slider" id="slider">
+                                            <img class="emoji-img" id="image" src="../../assets/images/svg/user.svg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="rating-count">
+                                        <span class="d-block">10 <span>km</span> </span>
+                                        <span class="d-block">20 <span>km</span> </span>
+                                        <span class="d-block">30 <span>km</span> </span>
+                                        <span class="d-block">40 <span>km</span> </span>
+                                        <span class="d-block">50 <span>km</span> </span>
+                                        <span class="d-block">60 <span>km</span> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-btn fixed-button position-relative">
+            <div class="custom-container">
+                <div class="d-flex align-items-center gap-3">
+                    <a href="search.html" class="btn outline-btn w-50">Clear all</a>
+                    <a href="search.html" class="btn theme-btn w-50">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- filter offcanvas end -->
+
+    <!-- range-slider js -->
+    <script src="../../assets/js/range-slider.js"></script>
+
+    <!-- distance-slider js -->
+    <script src="../../assets/js/distance-slider.js"></script>
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

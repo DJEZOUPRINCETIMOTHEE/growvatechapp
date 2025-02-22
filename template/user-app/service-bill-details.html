@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fixit">
+    <meta name="keywords" content="fixit">
+    <meta name="author" content="fixit">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Fixit - User App</title>
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="fixit">
+    <meta name="msapplication-TileImage" content="../../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/iconsax.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" id="rtl-link" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="provider-details.html">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+                <h3>Bill Details</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!--service bill section starts -->
+    <section class="section-b-space section-lg-t-space">
+        <div class="custom-container">
+            <div class="title">
+                <h5 class="fw-medium title-color">Selected Servicemen</h5>
+            </div>
+
+            <div class="servicemen-box">
+                <div class="profile-image">
+                    <img class="img-fluid img" src="../../assets/images/profile/p12.png" alt="p12">
+                </div>
+
+                <div class="profile-content">
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <h5 class="name fw-medium title-color">Kate Tanner</h5>
+                            <h6 class="fw-normal title-color ps-2"><img src="../../assets/images/svg/star-fill.svg"
+                                    alt="star">
+                                3.6</h6>
+                        </div>
+                        <h6 class="mt-1 content-color">3 years of experience</h6>
+                    </div>
+                    <a href="servicemen-list.html">
+                        <i class="iconsax edit-icon" data-icon="edit-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="title mt-3">
+                <h5 class="fw-medium title-color">Booked date & time</h5>
+            </div>
+
+            <div class="servicemen-box white-background">
+                <div class="booking-image">
+                    <i class="iconsax booking-icon" data-icon="calendar-1"> </i>
+                </div>
+
+                <div class="profile-content">
+                    <div>
+                        <h5 class="name fw-medium title-color border-0">6 September,2024</h5>
+                        <h6 class="mt-1 content-color">At 06:10 AM</h6>
+                    </div>
+                    <a href="#">
+                        <i class="iconsax edit-icon" data-icon="edit-2"> </i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="title mt-3">
+                <h5 class="fw-medium title-color">Bill summary</h5>
+                <h5 class="fw-medium success-color">Wallet : $254.23</h5>
+            </div>
+
+            <div class="bill-box">
+
+                <div class="bill-box-content p-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="fw-medium content-color">Per servicemen charge</h5>
+                        <h5 class="fw-medium title-color">$12.00</h5>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-3">
+                        <h5 class="fw-medium content-color">2 servicemen ($12.00*2)</h5>
+                        <h5 class="fw-medium title-color">$24.00</h5>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-3">
+                        <h5 class="fw-medium content-color">Tax (2%)</h5>
+                        <h5 class="fw-medium title-color">$6.00</h5>
+                    </div>
+                    <div class="total-amount">
+                        <h5 class="fw-medium title-color">Total Amount</h5>
+                        <h4 class="fw-medium theme-color">$30.00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cancellation-policy">
+                <div class="policy-box">
+                    <h5 class="fw-medium error-color">Cancellation policy*</h5>
+                    <p class="fw-normal error-color">Once you click the "proceed to checkout" button, you can not
+                        change your servicemen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-btn">
+            <div class="custom-container">
+                <a href="booking.html" class="btn theme-btn w-100">Confirm Booking</a>
+            </div>
+        </div>
+    </section>
+    <!--service bill section end -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- iconsax js -->
+    <script src="../../assets/js/iconsax.js"> </script>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- template-setting js -->
+    <script src="../../assets/js/template-setting.js"></script>
+
+    <!-- script js -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
