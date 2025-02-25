@@ -3,8 +3,8 @@
   \***************************************************************************************************************************************************************************************/
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Fixit App
-    Template URI: https://themes.pixelstrap.net/pwa/fixit/
+    Template Name: GROWVATECH App
+    Template URI: https://themes.pixelstrap.net/pwa/GROWVATECH/
     Description: This is PWA Html Template
     Author: Pixelstrap
     Author URL: https://themeforest.net/user/pixelstrap
@@ -55,27 +55,28 @@
 /* font family */
 /* color variables */
 :root {
-  --theme-color: 245, 130, 24;
+  --theme-color: 58, 109, 229; /* Bleu dominant */
   --title-color: 0, 22, 46;
   --content-color: 153, 153, 153;
   --box-bg: 246, 246, 246;
   --line-color: 229, 232, 234;
-  --secondary-color: 255, 196, 18;
+  --secondary-color: 24, 90, 200; /* Bleu plus foncé pour complément */
   --success-color: 39, 175, 77;
   --error-color: 255, 75, 75;
-  --accent-color: 58, 109, 229;
+  --accent-color: 45, 132, 232; /* Accent bleu */
   --white: 255, 255, 255;
-  --black: 0, 0, 0; }
+  --black: 0, 0, 0;
+}
 
 .dark {
-  --theme-color: 245, 130, 24;
+  --theme-color: 58, 109, 229;
   --title-color: 255, 255, 255;
   --content-color: 141, 143, 145;
   --white: 32, 25, 22;
   --black: 255, 255, 255;
   --box-bg: 45, 36, 32;
-  --line-color: 51, 45, 42; }
-
+  --line-color: 51, 45, 42;
+}
 /* base scss files */
 /*=====================
   2.1  Reset CSS start
@@ -321,8 +322,9 @@ li {
     box-shadow: none; }
 
 .theme-btn {
-  background-color: rgba(var(--theme-color), 1);
-  color: white; }
+  background-color: rgb(11 87 208);
+  color: white;
+  }
   .theme-btn:active {
     color: white !important;
     background-color: rgba(var(--theme-color), 1) !important;
@@ -1474,7 +1476,7 @@ li {
     animation: smokeOut 1.5s ease-in-out infinite alternate;
     text-shadow: 0 0 1px rgba(var(--title-color), 0.06); }
     .loader-wrapper .loader:before {
-      content: "Fixit"; }
+      content: "GROWVATECH"; }
 
 @keyframes smokeOut {
   100% {
@@ -8098,7 +8100,8 @@ li {
 ==========================*/
 .balance-background {
   border-radius: 10px;
-  background-color: rgba(var(--theme-color), 1); }
+  background-color: rgba(var(--theme-color), 1);
+  }
   .balance-background .balance-details {
     display: flex;
     align-items: center;
