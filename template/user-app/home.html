@@ -513,6 +513,30 @@
     </div>
     <!-- sidebar end -->
 
+    <!-- failed book modal starts -->
+    <div class="modal centered-modal fade" id="failed-booking" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Failed to book</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="successful-icon p-4 text-center">
+                        <img class="img-fluid icon" src="../../assets/images/failed-booking.svg"
+                            alt="delete-notification">
+                    </div>
+                    <p>Due to a payment issue, the booking has failed. Please verify it and try again.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#successfull-booking" data-bs-toggle="modal" class="btn theme-btn w-100">Payment again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- failed book modal end -->
+
+
     <!-- swiperjs -->
     <script src="../../assets/js/swiper-bundle.min.js"></script>
     <script src="../../assets/js/custom-swiper.js"></script>
