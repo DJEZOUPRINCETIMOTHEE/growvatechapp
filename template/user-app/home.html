@@ -551,6 +551,216 @@
     </div>
     <!-- failed book modal end -->
 
+        <!-- filter offcanvas starts -->
+    <div class="offcanvas offcanvas-bottom filter-offcanvas" tabindex="-1" id="filter">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter by (4)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="custom-container">
+            <ul class="nav nav-pills tab-style1 mt-3 mb-2" id="Default-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="status-tab" data-bs-toggle="pill" data-bs-target="#status"
+                        type="button" role="tab">Status</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="date-tab" data-bs-toggle="pill" data-bs-target="#date" type="button"
+                        role="tab">Date</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
+                        role="tab">Category</button>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-body pt-2">
+            <div class="tab-content" id="myTabContent1">
+                <div class=" tab-pane fade show active" id="status" role="tabpanel" tabindex="0">
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking1">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">All Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking1" checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking2">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Pending Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking2">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking3">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Accepted Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking3">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking4">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Ongoing Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking4">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking5">
+                                    <span class="d-flex align-items-center">
+
+                                        <span class="categories-name ps-0 border-0">Complete Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking5">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="booking6">
+                                    <span class="d-flex align-items-center">
+                                        <span class="categories-name ps-0 border-0">Cancelled Booking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="radio" name="booking" id="booking6">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="date" role="tabpanel" tabindex="0">
+                    <div class="demo-range-select w-100">
+                        <div id="demo-range-selection"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="home" role="tabpanel" tabindex="0">
+                    <h5 class="content-color fw-normal">Category list</h5>
+
+                    <form class="auth-form mt-0 p-0 bg-transparent">
+                        <div class="form-group">
+                            <div class="form-input">
+                                <input type="search" class="form-control search wo-filter" placeholder="Search here..">
+                                <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="categories-listing">
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories1">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/ac-repair.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Ac Repair</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories1"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories2">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/cleaning.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Cleaning</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories2"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories4">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/carpenter.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Carpenter</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories4"
+                                    checked>
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories5">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/cooking.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Cooking</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories5">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories6">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon"
+                                            src="../../assets/images/categories/electrician.svg" alt="ac-repair">
+                                        <span class="categories-name">Electrician</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories6">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories7">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/painter.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Painter</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories7">
+                            </div>
+                        </li>
+                        <li class="listing-categories">
+                            <div class="form-check form-check-reverse text-start">
+                                <label class="form-check-label" for="categories8">
+                                    <span class="d-flex align-items-center">
+                                        <img class="categories-icon" src="../../assets/images/categories/plumber.svg"
+                                            alt="ac-repair">
+                                        <span class="categories-name">Plumber</span>
+                                    </span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" name="categories" id="categories8">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-btn fixed-button position-relative">
+            <div class="custom-container">
+                <div class="d-flex align-items-center gap-3">
+                    <a href="booking.html" class="btn outline-btn w-50">Clear all</a>
+                    <a href="booking.html" class="btn theme-btn w-50">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- filter offcanvas end -->
+
 
     <!-- swiperjs -->
     <script src="../../assets/js/swiper-bundle.min.js"></script>
