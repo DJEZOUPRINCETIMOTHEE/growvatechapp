@@ -559,18 +559,6 @@
             <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter by (4)</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="custom-container">
-            <ul class="nav nav-pills tab-style1 mt-3 mb-2" id="Default-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="date-tab" data-bs-toggle="pill" data-bs-target="#qrcode" type="button"
-                        role="tab">Date</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="date-tab" data-bs-toggle="pill" data-bs-target="#scanqr" type="button"
-                        role="tab">Date</button>
-                </li>
-            </ul>
-        </div>
         <div class="offcanvas-body pt-2">
             <div class="tab-content" id="myTabContent1">
                 <div class="tab-pane fade" id="qrcode" role="tabpanel" tabindex="0">
@@ -587,13 +575,17 @@
                 </div>
             </div>
         </div>
-        <div class="grid-btn fixed-button position-relative">
-            <div class="custom-container">
-                <div class="d-flex align-items-center gap-3">
-                    <a href="booking.html" class="btn outline-btn w-50">Clear all</a>
-                    <a href="booking.html" class="btn theme-btn w-50">Apply</a>
-                </div>
-            </div>
+         <div class="custom-container">
+            <ul class="nav nav-pills tab-style1 mt-3 mb-2" id="Default-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="date-tab" data-bs-toggle="pill" data-bs-target="#qrcode" type="button"
+                        role="tab">Scanner un code QR</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="date-tab" data-bs-toggle="pill" data-bs-target="#scanqr" type="button"
+                        role="tab">Mon code QR</button>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- filter offcanvas end -->
